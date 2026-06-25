@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--ui-surface); color: var(--ui-fg); font-family: var(--ui-font); transition: background .2s, color .2s; }
+
+.doc-header {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 28px; background: var(--ui-bg); border-bottom: 1px solid var(--ui-border);
+}
+.doc-header__logo { font-weight: 800; font-size: 1.2rem; }
+.doc-header__logo code { font-family: 'JetBrains Mono', monospace; color: var(--ui-primary); }
+.doc-header__spacer { flex: 1; }
+.doc-header a { color: var(--ui-muted); text-decoration: none; font-size: .9rem; font-weight: 600; }
+.doc-header a:hover { color: var(--ui-fg); }
+
+.doc-hero { max-width: 880px; margin: 0 auto; padding: 48px 24px 10px; text-align: center; }
+.doc-hero h1 { font-size: 2.2rem; margin: 0 0 8px; }
+.doc-hero p { color: var(--ui-muted); font-size: 1.05rem; margin: 0 auto; max-width: 560px; }
+.doc-hero pre { display: inline-block; margin-top: 18px; background: var(--ui-bg); border: 1px solid var(--ui-border);
+  padding: 10px 16px; border-radius: 10px; font-family: 'JetBrains Mono', monospace; font-size: .85rem; color: var(--ui-primary); }
+
+.doc-main { max-width: 880px; margin: 0 auto; padding: 20px 24px 80px; display: flex; flex-direction: column; gap: 22px; }
+.doc-section { background: var(--ui-bg); border: 1px solid var(--ui-border); border-radius: 14px; overflow: hidden; }
+.doc-section > h2 { margin: 0; padding: 16px 22px; font-size: 1.05rem; border-bottom: 1px solid var(--ui-border); }
+.doc-demo { padding: 26px 22px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.doc-code { margin: 0; padding: 14px 22px; background: var(--ui-surface); border-top: 1px solid var(--ui-border);
+  font-family: 'JetBrains Mono', monospace; font-size: .8rem; color: var(--ui-muted); overflow-x: auto; white-space: pre; }
+
+.doc-footer { text-align: center; color: var(--ui-muted); font-size: .85rem; padding: 24px; border-top: 1px solid var(--ui-border); }
+.doc-footer a { color: var(--ui-primary); text-decoration: none; }

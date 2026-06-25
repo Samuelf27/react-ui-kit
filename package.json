@@ -1,0 +1,51 @@
+{
+  "name": "@samuelf27/react-ui-kit",
+  "version": "1.0.0",
+  "description": "Design system em React + TypeScript: componentes acessíveis, design tokens, dark mode e tree-shaking.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": ["dist"],
+  "sideEffects": ["**/*.css"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:lib": "tsup src/index.ts --format esm,cjs --dts --external react --external react-dom --clean && node -e \"require('fs').copyFileSync('src/styles.css','dist/styles.css')\"",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "keywords": ["react", "typescript", "design-system", "ui", "components", "ui-kit", "dark-mode", "accessibility"],
+  "author": "Samuel Ferreira",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Samuelf27/react-ui-kit.git" },
+  "homepage": "https://samuelf27.github.io/react-ui-kit/",
+  "publishConfig": { "access": "public" },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "jsdom": "^24.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1",
+    "vitest": "^1.6.0"
+  }
+}
