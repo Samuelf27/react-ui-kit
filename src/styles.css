@@ -9,10 +9,10 @@
   --ui-primary: #4f46e5;
   --ui-primary-fg: #ffffff;
   --ui-primary-hover: #4338ca;
-  --ui-success: #16a34a;
-  --ui-warning: #d97706;
-  --ui-danger: #dc2626;
-  --ui-info: #0ea5e9;
+  --ui-success: #166534;
+  --ui-warning: #92400e;
+  --ui-danger: #b91c1c;
+  --ui-info: #0369a1;
 
   --ui-radius: 10px;
   --ui-radius-sm: 6px;
@@ -30,6 +30,11 @@
   --ui-surface: #111827;
   --ui-primary: #6366f1;
   --ui-primary-hover: #818cf8;
+  /* Semantic text colors tuned for dark surfaces (badge/alert text on tinted bg). */
+  --ui-success: #4ade80;
+  --ui-warning: #fbbf24;
+  --ui-danger: #f87171;
+  --ui-info: #38bdf8;
   --ui-shadow: 0 6px 24px rgb(0 0 0 / 0.4);
 }
 
@@ -54,6 +59,8 @@
 .ui-btn--ghost { background: transparent; color: var(--ui-fg); }
 .ui-btn--ghost:hover:not(:disabled) { background: var(--ui-surface); }
 .ui-btn--danger { background: var(--ui-danger); color: #fff; }
+/* In dark mode --ui-danger is a light text color; keep the solid button dark for AA white text. */
+.dark .ui-btn--danger, [data-theme='dark'] .ui-btn--danger { background: #b91c1c; }
 .ui-btn--danger:hover:not(:disabled) { filter: brightness(1.08); }
 .ui-btn--block { width: 100%; }
 
@@ -124,7 +131,8 @@
 @keyframes ui-spin { to { transform: rotate(360deg); } }
 
 /* ===== Switch ===== */
-.ui-switch { position: relative; display: inline-flex; align-items: center; cursor: pointer; }
+.ui-switch { position: relative; display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-family: var(--ui-font); }
+.ui-switch__label { font-size: .9rem; color: var(--ui-fg); user-select: none; }
 .ui-switch input { position: absolute; opacity: 0; width: 0; height: 0; }
 .ui-switch__track {
   width: 42px; height: 24px; border-radius: var(--ui-radius-full);

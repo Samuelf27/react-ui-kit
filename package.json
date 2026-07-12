@@ -14,8 +14,12 @@
     },
     "./styles.css": "./dist/styles.css"
   },
-  "files": ["dist"],
-  "sideEffects": ["**/*.css"],
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -24,12 +28,26 @@
     "typecheck": "tsc --noEmit",
     "preview": "vite preview"
   },
-  "keywords": ["react", "typescript", "design-system", "ui", "components", "ui-kit", "dark-mode", "accessibility"],
+  "keywords": [
+    "react",
+    "typescript",
+    "design-system",
+    "ui",
+    "components",
+    "ui-kit",
+    "dark-mode",
+    "accessibility"
+  ],
   "author": "Samuel Ferreira",
   "license": "MIT",
-  "repository": { "type": "git", "url": "git+https://github.com/Samuelf27/react-ui-kit.git" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samuelf27/react-ui-kit.git"
+  },
   "homepage": "https://samuelf27.github.io/react-ui-kit/",
-  "publishConfig": { "access": "public" },
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"
@@ -40,6 +58,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "jest-axe": "^9.0.0",
     "jsdom": "^24.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

@@ -17,7 +17,7 @@ function initials(name: string): string {
 export function Avatar({ src, name, size = 'md', className = '', ...props }: AvatarProps) {
   return (
     <div className={`ui-avatar ui-avatar--${size} ${className}`.trim()} {...props}>
-      {src ? <img src={src} alt={name} /> : <span aria-label={name}>{initials(name)}</span>}
+      {src ? <img src={src} alt={name} /> : <span role="img" aria-label={name}>{initials(name)}</span>}
     </div>
   );
 }

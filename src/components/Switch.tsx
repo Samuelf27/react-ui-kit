@@ -14,6 +14,7 @@ export const Switch = forwardRef<HTMLInputElement, SwitchProps>(
         <span className="ui-switch__track">
           <span className="ui-switch__thumb" />
         </span>
+        <span className="ui-switch__label">{label}</span>
       </label>
     );
   },

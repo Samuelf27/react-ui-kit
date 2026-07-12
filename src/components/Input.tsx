@@ -22,13 +22,13 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         <input
           ref={ref}
           id={inputId}
-          aria-invalid={error ? true : undefined}
-          aria-describedby={error ? `${inputId}-error` : undefined}
           className={`ui-input ${error ? 'ui-input--error' : ''} ${className}`.trim()}
           {...props}
+          aria-invalid={error ? true : props['aria-invalid']}
+          aria-describedby={error ? `${inputId}-error` : props['aria-describedby']}
         />
         {error && (
-          <span id={`${inputId}-error`} className="ui-field__error">
+          <span id={`${inputId}-error`} role="alert" className="ui-field__error">
             {error}
           </span>
         )}
