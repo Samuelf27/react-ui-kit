@@ -5,12 +5,12 @@ Design system em <b>React + TypeScript</b> — componentes acessíveis, design t
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white"/>
-  <img src="https://github.com/Samuelf27/react-ui-kit/actions/workflows/ci.yml/badge.svg"/>
-  <img src="https://img.shields.io/badge/tests-8%20passing-34d399?style=flat"/>
-  <img src="https://img.shields.io/badge/a11y-acessível-6f42c1?style=flat"/>
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <a href="https://github.com/Samuelf27/react-ui-kit/actions/workflows/ci.yml"><img src="https://github.com/Samuelf27/react-ui-kit/actions/workflows/ci.yml/badge.svg" alt="CI status"/></a>
+  <img src="https://img.shields.io/badge/tests-17%20passing-34d399?style=flat" alt="17 testes passando"/>
+  <img src="https://img.shields.io/badge/a11y-acessível-6f42c1?style=flat" alt="acessível"/>
+  <img src="https://img.shields.io/badge/license-MIT-green?style=flat" alt="licença MIT"/>
 </p>
 
 <p align="center">
