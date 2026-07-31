@@ -34,7 +34,7 @@ export function App() {
       <div className="doc-hero">
         <h1>Design System</h1>
         <p>Componentes React acessíveis, com design tokens e dark mode. Tipados em TypeScript e tree-shakeable.</p>
-        <pre>npm install @samuelf27/react-ui-kit</pre>
+        <pre>npm install @eusamuelf/react-ui-kit</pre>
       </div>
 
       <main className="doc-main">

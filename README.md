@@ -28,12 +28,12 @@ Uma **biblioteca de componentes** reutilizáveis — o tipo de infraestrutura de
 ## 📦 Instalação
 
 ```bash
-npm install @samuelf27/react-ui-kit
+npm install @eusamuelf/react-ui-kit
 ```
 
 ```tsx
-import { Button, Badge, Input } from '@samuelf27/react-ui-kit';
-import '@samuelf27/react-ui-kit/styles.css'; // importe os estilos uma vez
+import { Button, Badge, Input } from '@eusamuelf/react-ui-kit';
+import '@eusamuelf/react-ui-kit/styles.css'; // importe os estilos uma vez
 
 export default function App() {
   return <Button variant="primary">Salvar</Button>;

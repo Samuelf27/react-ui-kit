@@ -1,6 +1,6 @@
 /**
  * react-ui-kit — design system em React + TypeScript.
- * Importe os estilos uma vez: `import '@samuelf27/react-ui-kit/styles.css'`
+ * Importe os estilos uma vez: `import '@eusamuelf/react-ui-kit/styles.css'`
  */
 export { Button, type ButtonProps } from './components/Button';
 export { Badge, type BadgeProps } from './components/Badge';

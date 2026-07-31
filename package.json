@@ -1,5 +1,5 @@
 {
-  "name": "@samuelf27/react-ui-kit",
+  "name": "@eusamuelf/react-ui-kit",
   "version": "1.0.0",
   "description": "Design system em React + TypeScript: componentes acessíveis, design tokens, dark mode e tree-shaking.",
   "type": "module",
