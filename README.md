@@ -67,6 +67,19 @@ npm run build:lib  # gera dist/ (ESM + CJS + .d.ts + styles.css)
 - **CI** (`ci.yml`): typecheck + testes + build da lib a cada push
 - **Deploy** (`deploy.yml`): publica a documentação no GitHub Pages
 
+## 🧪 Testes
+
+**17 testes** em 3 arquivos (Vitest + Testing Library), rodando no CI a cada push e pull request.
+
+A acessibilidade é testada, não apenas afirmada:
+
+- **`src/components/a11y.test.tsx`** — roda o **axe** sobre os componentes e falha se houver violação. Verifica ainda os papéis ARIA na prática: `Alert` usa `role="alert"` (assertivo) para `danger`/`warning` e `role="status"` (educado) para `info`/`success`; `Avatar` se anuncia via `role="img"`; `Switch` mantém rótulo visível e nome acessível.
+- **`Button.test.tsx`** e **`Input.test.tsx`** — variantes, estados e comportamento.
+
+```bash
+npm test
+```
+
 ## 📄 Licença
 
 [MIT](LICENSE) © Samuel Ferreira
