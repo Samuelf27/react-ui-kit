@@ -21,6 +21,7 @@
     "**/*.css"
   ],
   "scripts": {
+    "prepare": "npm run build:lib",
     "dev": "vite",
     "build": "vite build",
     "build:lib": "tsup src/index.ts --format esm,cjs --dts --external react --external react-dom --clean && node -e \"require('fs').copyFileSync('src/styles.css','dist/styles.css')\"",
