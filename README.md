@@ -27,13 +27,17 @@ Uma **biblioteca de componentes** reutilizáveis — o tipo de infraestrutura de
 
 ## 📦 Instalação
 
+> **Ainda não publicado no npm.** Por enquanto, instale direto do GitHub:
+
 ```bash
-npm install @eusamuelf/react-ui-kit
+npm install github:Samuelf27/react-ui-kit
 ```
 
+Ou explore a [documentação ao vivo](https://samuelf27.github.io/react-ui-kit/), construída com os próprios componentes.
+
 ```tsx
-import { Button, Badge, Input } from '@eusamuelf/react-ui-kit';
-import '@eusamuelf/react-ui-kit/styles.css'; // importe os estilos uma vez
+import { Button, Badge, Input } from 'react-ui-kit';
+import 'react-ui-kit/styles.css'; // importe os estilos uma vez
 
 export default function App() {
   return <Button variant="primary">Salvar</Button>;
